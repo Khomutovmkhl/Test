@@ -47,3 +47,5 @@ private static final int MAX_TRANSACTIONS = 30;      // Максимум тра�
 ./gradlew clean
 ```
 
+# Время проведённое на проекте
+![](Images/img.png)
