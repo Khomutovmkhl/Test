@@ -24,3 +24,7 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+application {
+    mainClass = "ru.liquisort.testAssignment.Main"
+}

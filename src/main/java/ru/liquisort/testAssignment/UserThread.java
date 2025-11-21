@@ -8,18 +8,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class UserThread extends Thread {
     private static final java.util.logging.Logger log = java.util.logging.Logger.getLogger(UserThread.class.getName());
     private static final AtomicInteger transactionCounter = new AtomicInteger(0);
-    private static final int MAX_TRANSACTIONS = 30;
 
     private final String threadName;
     private final List<Account> accounts;
     private final Random random;
     private final CountDownLatch completionLatch;
+    private final int MAX_TRANSACTIONS;
 
-    public UserThread(String threadName, List<Account> accounts, CountDownLatch completionLatch) {
+    public UserThread(String threadName, List<Account> accounts, CountDownLatch completionLatch, int maxTransactions) {
         this.threadName = threadName;
         this.accounts = accounts;
         this.random = new Random();
         this.completionLatch = completionLatch;
+        this.MAX_TRANSACTIONS = maxTransactions;
     }
 
     @Override
