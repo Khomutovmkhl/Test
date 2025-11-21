@@ -24,7 +24,7 @@
 
 ## ⚙️ Конфигурация
 
-### Основные параметры (изменяются в `Main.java`):
+### Основные параметры (изменяются в [Main.java](src/main/java/ru/liquisort/testAssignment/Main.java)):
 
 ```java
 private static final int INITIAL_BALANCE = 10000;    // Начальный баланс счетов

@@ -10,7 +10,7 @@ public class Main {
 
     private static final int INITIAL_BALANCE = 10000;    // Начальный баланс счетов
     private static final int NUMBER_OF_ACCOUNTS = 4;     // Количество счетов
-    private static final int NUMBER_OF_THREADS = 2;      // Количество потоков
+    private static final int NUMBER_OF_THREADS = 3;      // Количество потоков
     private static final int MAX_TRANSACTIONS = 30;      // Максимум транзакций
 
     public static void main(String[] args) throws InterruptedException {
